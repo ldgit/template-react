@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -21,7 +21,7 @@ const Main = styled.main`
   justify-content: center;
 `;
 
-function App() {
+const App: FunctionComponent = () => {
   return (
     <div>
       <AppBar position="sticky">
@@ -36,6 +36,6 @@ function App() {
       <Main>Content</Main>
     </div>
   );
-}
+};
 
 export default App;
