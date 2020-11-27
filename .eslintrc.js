@@ -5,6 +5,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
+    "plugin:react/recommended",
     'plugin:jest/recommended',
     "plugin:eslint-comments/recommended",
     'prettier',
@@ -13,4 +14,9 @@ module.exports = {
   rules: {
     'no-undef': 'off',
   },
+  "settings": {
+    "react": {
+      "version": "detect",
+    },
+  }
 };
